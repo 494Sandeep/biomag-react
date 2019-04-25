@@ -1,12 +1,10 @@
 const path = require('path');
+const trainingPage = 'src/templates/page/training.js'
+const blogPage = 'src/templates/page/blog.js'
+const therapistPage = 'src/templates/page/therapists.js'
+const termsAndPolicyPage = 'src/templates/page/terms-and-policy.js'
 
 exports.createPages = ({ actions: { createPage } }) => {
-    const trainingPage = 'src/templates/page/training.js'
-    const blogPage = 'src/templates/page/blog.js'
-    const therapistPage = 'src/templates/page/therapists.js'
-    const termsAndPolicyPage = 'src/templates/page/terms-and-policy.js'
-
-
     createPage({
         path: "/training/",
         component: path.resolve(trainingPage)

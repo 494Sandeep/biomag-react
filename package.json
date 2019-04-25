@@ -1,5 +1,5 @@
 {
-      "name": "Beyond Bio-magnetism,Biomagnetic Pair Therapy, Dr.Luis Garcia - 3D App",
+      "name": "Beyond-Biomagnetism",
       "private": true,
       "description": "The App provides a various Anatomical Bio magnetism Pairs which may be of therapeutic benefit. Biomagnetism therapy is a natural traditional healing process, which supports a normal response to a number of health concerns using pairs of magnets of medium intensity specifically placed.",
       "version": "0.1.0",
@@ -16,6 +16,7 @@
             "gatsby-transformer-json": "^2.1.11",
             "gatsby-transformer-sharp": "^2.1.18",
             "less": "^3.9.0",
+            "less-loader": "^4.1.0",
             "prop-types": "^15.7.2",
             "react": "^16.8.6",
             "react-dom": "^16.8.6",
