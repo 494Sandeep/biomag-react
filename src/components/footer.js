@@ -13,7 +13,7 @@ const Footer = ({ data }) => {
                     <div className="col-md-6 text-sm-right text-xs-center">
                         <p className="copyright-content">{data.footer.copyright}</p>
                         <p className="copyright-text">
-                            <Link to="/PrivacyPolicy/" className="scrollToTop privacypolicyTitle">{data.footer.privacypolicyTitle}</Link>
+                            <Link to="/terms-and-policy/" className="scrollToTop privacypolicyTitle">{data.footer.privacypolicyTitle}</Link>
                         </p>
                         <p className="copyright-text" dangerouslySetInnerHTML={{ __html: data.footer.createdBy }}></p>
                     </div>

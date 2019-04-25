@@ -18,163 +18,22 @@
         "homeMenu": [
             {
                 "navItem": "Training",
-                "navHref": "class",
-                "navState": "landingPage",
-                "Code": "HL001",
+                "navHref": "/class",
                 "id": "01"
             },
             {
                 "navItem": "Therapists",
-                "navHref": "therapist",
-                "navState": "landingPage",
-                "Code": "HL001",
+                "navHref": "/therapist",
                 "id": "01"
             },
             {
                 "navItem": "Blog",
-                "navHref": "blog",
-                "navState": "landingPage",
-                "Code": "HL001",
+                "navHref": "/blog",
                 "id": "01"
             },
             {
                 "navItem": "Home",
-                "navHref": "landingPage",
-                "navState": "blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Training",
-                "navHref": "class",
-                "navState": "blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Therapists",
-                "navHref": "therapist",
-                "navState": "blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Blog",
-                "navHref": "blog",
-                "navState": "blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Home",
-                "navHref": "landingPage",
-                "navState": "PrivacyPolicy",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Training",
-                "navHref": "class",
-                "navState": "PrivacyPolicy",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Therapists",
-                "navHref": "therapist",
-                "navState": "PrivacyPolicy",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Blog",
-                "navHref": "blog",
-                "navState": "PrivacyPolicy",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Home",
-                "navHref": "landingPage",
-                "navState": "biomag-blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Training",
-                "navHref": "class",
-                "navState": "biomag-blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Therapists",
-                "navHref": "therapist",
-                "navState": "biomag-blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Blog",
-                "navHref": "blog",
-                "navState": "biomag-blog",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Home",
-                "navHref": "landingPage",
-                "navState": "therapist",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Training",
-                "navHref": "class",
-                "navState": "therapist",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Therapists",
-                "navHref": "therapist",
-                "navState": "therapist",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Blog",
-                "navHref": "blog",
-                "navState": "therapist",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Home",
-                "navHref": "landingPage",
-                "navState": "class",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Training",
-                "navHref": "class",
-                "navState": "class",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Therapists",
-                "navHref": "therapist",
-                "navState": "class",
-                "Code": "HL001",
-                "id": "01"
-            },
-            {
-                "navItem": "Blog",
-                "navHref": "blog",
-                "navState": "class",
-                "Code": "HL001",
+                "navHref": "/",
                 "id": "01"
             }
         ]
