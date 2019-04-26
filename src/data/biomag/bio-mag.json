@@ -348,7 +348,7 @@
                 "blogTags": [
                     "Biomagnetism and Magnetic Therapy"
                 ],
-                "url": "traumatic-brain-injury-and-biomagnetism",
+                "path": "traumatic-brain-injury-and-biomagnetism",
                 "class": "",
                 "Code": "BD006",
                 "id": "07"
@@ -367,7 +367,7 @@
                 "blogTags": [
                     "Biomagnetism and Magnetic Therapy"
                 ],
-                "url": "biomagnetism-and-children",
+                "path": "biomagnetism-and-children",
                 "class": "",
                 "Code": "BD006",
                 "id": "06"
@@ -386,7 +386,7 @@
                     "Biomagnetism and Magnetic Therapy"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "biomagnetism-and-dairy-products",
+                "path": "biomagnetism-and-dairy-products",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -406,7 +406,7 @@
                     "News and Events"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "importance-of-biomagnetism-training",
+                "path": "importance-of-biomagnetism-training",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -426,7 +426,7 @@
                     "News and Events"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "importance-of-biomagnetism-training",
+                "path": "importance-of-biomagnetism-training",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -445,7 +445,7 @@
                     "Biomagnetism and Magnetic Therapy"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "beyond-biomag-3d-app-what-is-it",
+                "path": "beyond-biomag-3d-app-what-is-it",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -464,7 +464,7 @@
                     "Diseases"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "insects-can-transmit-dozens-of-diseases-to-humans",
+                "path": "insects-can-transmit-dozens-of-diseases-to-humans",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -483,7 +483,7 @@
                     "News and Events"
                 ],
                 "blogAuthorImg": "images/Beyond-Biomag-Logo.png",
-                "url": "listen-to-dr.garcias-interview-with-dr.rima-truth-reports",
+                "path": "listen-to-dr.garcias-interview-with-dr.rima-truth-reports",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -502,7 +502,7 @@
                     "Biomagnetism and Magnetic Therapy"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "biomagnetism-and-magnetic-therapy:are-they-different-therapies",
+                "path": "biomagnetism-and-magnetic-therapy:are-they-different-therapies",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -521,7 +521,7 @@
                     "Diseases"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "diabetes-and-biomagnetism",
+                "path": "diabetes-and-biomagnetism",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -540,7 +540,7 @@
                     "Diseases"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "diabetes-and-biomagnetism",
+                "path": "diabetes-and-biomagnetism",
                 "class": "pathogenBlogImg",
                 "Code": "BD001",
                 "id": "01"
@@ -559,7 +559,7 @@
                     "Diseases"
                 ],
                 "blogAuthorImg": "images/luis-f-garcia.png",
-                "url": "malaria-and-biomagnetism",
+                "path": "malaria-and-biomagnetism",
                 "class": "pathogenBlogImg",
                 "Code": "BD007",
                 "id": "07"
@@ -578,7 +578,7 @@
                 "blogTags": [
                     "Diseases"
                 ],
-                "url": "biomagnetism-and-lyme-disease-multi-pathogen-syndrome",
+                "path": "biomagnetism-and-lyme-disease-multi-pathogen-syndrome",
                 "class": "pathogenBlogImg",
                 "Code": "BD008",
                 "id": "08"
@@ -597,7 +597,7 @@
                 "blogTags": [
                     "Before and After Biomagnetism Therapy"
                 ],
-                "url": "fungus-on-the-hands",
+                "path": "fungus-on-the-hands",
                 "class": "",
                 "Code": "BD004",
                 "id": "04"
@@ -616,7 +616,7 @@
                 "blogTags": [
                     "Before and After Biomagnetism Therapy"
                 ],
-                "url": "measles-on-the-legs",
+                "path": "measles-on-the-legs",
                 "class": "",
                 "Code": "BD005",
                 "id": "05"
@@ -635,7 +635,7 @@
                 "blogTags": [
                     "News and Events"
                 ],
-                "url": "behold-beyond-biomag-3d-ios-app-is-here",
+                "path": "behold-beyond-biomag-3d-ios-app-is-here",
                 "class": "",
                 "Code": "BD006",
                 "id": "06"
