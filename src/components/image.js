@@ -8,9 +8,8 @@ const Image = () => (
             query {
                 placeholderImage: file(relativePath: { eq: "Biomag-Logo-Big.png" }) {
                     childImageSharp {
-                        fluid(maxWidth: 900) {
-                            src
-                            originalName    
+                        fluid(maxWidth: 300) {
+                        ...GatsbyImageSharpFluid
                         }
                     }
                 }
