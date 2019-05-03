@@ -1,3 +1,3 @@
-export const Disqus = {
+export const DisqusConfig = {
     shortname: 'BeyondBiomag',
 };

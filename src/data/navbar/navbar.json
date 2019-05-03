@@ -3,6 +3,7 @@
         "logoImage": "images/Biomag-Logo-Big.png",
         "highlights": "Highlights",
         "ContactUs": "Contact Us",
+        "home": "Home",
         "Products": [
             {
                 "ProductsList": "Beyond BioMag 3D",
@@ -18,23 +19,18 @@
         "homeMenu": [
             {
                 "navItem": "Training",
-                "navHref": "/class",
+                "path": "/training",
                 "id": "01"
             },
             {
                 "navItem": "Therapists",
-                "navHref": "/therapist",
-                "id": "01"
+                "path": "/therapist",
+                "id": "02"
             },
             {
                 "navItem": "Blog",
-                "navHref": "/blog",
-                "id": "01"
-            },
-            {
-                "navItem": "Home",
-                "navHref": "/",
-                "id": "01"
+                "path": "/blog",
+                "id": "03"
             }
         ]
     }

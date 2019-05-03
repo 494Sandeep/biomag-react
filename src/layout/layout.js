@@ -5,9 +5,27 @@ import { useStaticQuery, graphql } from "gatsby"
 import Header from "../components/header"
 import Footer from "../components/footer";
 
-const Layout = ({ children }) => {
+const Layout = ({ children, pageContext }) => {
     const data = useStaticQuery(graphql`
             query layoutQuery{
+                navbarJson {
+                    headerMenu {
+                        logoImage
+                        highlights
+                        ContactUs
+                        home
+                        Products {
+                            ProductsList
+                            href
+                            class
+                        }
+                        homeMenu {
+                            id
+                            navItem
+                            path
+                        }
+                    }
+                }
                 biomagJson {
                     footer {
                         copyright
@@ -17,16 +35,10 @@ const Layout = ({ children }) => {
                         NonMedicalDeviceDisclaimer
                     }
                 }
-                site {
-                    siteMetadata {
-                        title
-                    }
-                }
             }`)
-    // console.log(data)
     return (
         <>
-            <Header siteTitle={data.site.siteMetadata.title} />
+            <Header data={data.navbarJson.headerMenu} pageContext={pageContext} />
             <div>
                 <main>{children}</main>
             </div>
