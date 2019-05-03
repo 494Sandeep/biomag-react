@@ -1,64 +1,64 @@
 import React from "react";
+import Img from "gatsby-image";
+import { Col, Row, OverlayTrigger, Tooltip } from "react-bootstrap";
+
 const Therapist = ({ therapistDescription }) => {
-  return (
-    <div className="row">
-      {therapistDescription.map(items => {
-        return (
-          <div key={items.id} className="col-4 therapistpage-leftalign">
-            {/* left Image and tooltip */}
-            <div className="col-md-2 col-xs-2 ">
-              <div className="row">
-                <div className="col-md-12 col-xs-12">
-                  <img className="img-fluid" alt="" />
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-12 col-xs-12 tooltip">
-                  <img
-                    src="https://www.beyondbiomag.io/images/specialization.png"
-                    className="img-fluid therapist-image-clients"
-                    alt=""
-                  />
-                  <span className="tooltiptext">
-                    <ul className="tooltip_list">
-                      <li className="tooltip_list_type">blah </li>
-                      <li className="tooltip_list_type">dsdv sdvsdfv</li>
-                      <li className="tooltip_list_type">dvdv</li>
-                      <li className="tooltip_list_type">sdvv </li>
-                    </ul>
-                  </span>
-                </div>
-              </div>
-            </div>
-            {/* Right Side : details */}
-            <div className="col-md-10 col-xs-10 therapist-contact-details">
-              <h5 className="therapistHeading">{items.therapistName}</h5>
-              <p className="therapistYear">{items.therapistYear}</p>
-              {items.therapistCityDetails.map((item, index) => {
+
+    return (
+        <Row className="pt-3 px-2">
+            {therapistDescription.map((therapist) => {
                 return (
-                  <p key={index} className="therapistHeadingDetails">
-                    {" "}
-                    {item}
-                  </p>
+                    <Col md={4} key={therapist.id} className="therapistpage-leftalign">
+                        <Row>
+                            <Col md={2} className="col-2 px-0">
+                                <Row>
+                                    {/* Avator */}
+                                    <Col md={12} className="">
+                                        <Img className="img-fluid" fluid={therapist.therapistImg.childImageSharp.fluid} />
+                                    </Col>
+                                    {/* Tooltip */}
+                                    <Col md={12} className=" tooltip">
+                                        <OverlayTrigger
+                                            key="right"
+                                            placement="right"
+                                            style={{ 'white-space': 'nowrap' }}
+                                            overlay={<Tooltip id={`tooltip-right`} ><span className="tooltiptext" dangerouslySetInnerHTML={{ __html: therapist.therapistTooltip }} /></Tooltip>}>
+                                            <div>
+                                                <img src="https://www.beyondbiomag.io/images/specialization.png" className="img-fluid therapist-image-clients" alt="" />
+                                            </div>
+                                        </OverlayTrigger>
+                                    </Col>
+                                </Row>
+                            </Col>
+                            <Col md={10} className="col-10 therapist-contact-details">
+                                <Row className="row">
+                                    <Col md={12} className="col-12">
+                                        <h5 className="therapistHeading">
+                                            {therapist.therapistName}
+                                        </h5>
+                                    </Col>
+                                    <Col md={12} className="col-12">
+                                        <p className="therapistYear">{therapist.therapistYear}</p>
+                                        {therapist.therapistCityDetails.map((item, index) => {
+                                            return (<p key={index} className="therapistHeadingDetails">{item}</p>);
+                                        })}
+                                    </Col>
+                                    <Col md={12} className="col-12">
+                                        <p className="therapistPhonenumber" dangerouslySetInnerHTML={{ __html: therapist.therapistPhonenumber }} />
+                                    </Col>
+                                    <Col md={12} className="col-12">
+                                        <p className="therapistGmail" dangerouslySetInnerHTML={{ __html: therapist.therapistGmail }} />
+                                    </Col>
+                                    <Col md={12} className="col-12">
+                                        <p className="therapistWebsite" dangerouslySetInnerHTML={{ __html: therapist.therapistWebsite }} />
+                                    </Col>
+                                </Row>
+                            </Col>
+                        </Row>
+                    </Col>
                 );
-              })}
-              <p
-                className="therapistPhonenumber"
-                dangerouslySetInnerHTML={{ __html: items.therapistPhonenumber }}
-              />
-              <p
-                className="therapistGmail"
-                dangerouslySetInnerHTML={{ __html: items.therapistGmail }}
-              />
-              <p
-                class="therapistWebsite"
-                dangerouslySetInnerHTML={{ __html: items.therapistWebsite }}
-              />
-            </div>
-          </div>
-        );
-      })}
-    </div>
-  );
+            })}
+        </Row>
+    );
 };
 export default Therapist;
