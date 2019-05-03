@@ -7,6 +7,13 @@ const termsAndPolicyPage = 'src/templates/page/terms-and-policy.js'
 
 exports.createPages = ({ actions: { createPage }, graphql }) => {
     createPage({
+        path: "/",
+        component: path.resolve('./src/layout/index.js'),
+        context: {
+            pageType: "Landing Page"
+        }
+    });
+    createPage({
         path: "/training/",
         component: path.resolve(trainingPage)
     });
@@ -19,33 +26,13 @@ exports.createPages = ({ actions: { createPage }, graphql }) => {
         component: path.resolve(therapistPage)
     });
     createPage({
-        path: "/therapist/",
-        component: path.resolve(therapistPage)
-    });
-    createPage({
         path: "/terms-and-policy/",
         component: path.resolve(termsAndPolicyPage)
     });
     return graphql(`{
             biomagJson {
                 blog {
-                    blogFilter
-                    blogDetail {
-                        id
-                        blogListName
-                        blogFilter
-                    }
                     blogDescription {
-                        id
-                        blogImg
-                        blogName
-                        blogFilter
-                        blogAdmin
-                        blogReadmore
-                        shortDescription
-                        blogDate
-                        blogAuthorImg
-                        blogTags
                         path
                     }
                 }
@@ -57,6 +44,9 @@ exports.createPages = ({ actions: { createPage }, graphql }) => {
             createPage({
                 path: `/blog/${node.path}`,
                 component: path.resolve(blogPageComponent),
+                context: {
+                    pageURL: node.path
+                }
             })
         })
     })
