@@ -3,8 +3,8 @@
 @BlogContentColor: #8c8c8c;
 
 #blog {
+    padding-top: 119px;
     background-color: @BlogbackGroundColor;
-    padding-top: 50px;
 
     #blogCard {
         padding-top: 24px;
@@ -56,6 +56,8 @@
 }
 
 #singleBlog {
+    padding-top: 119px;
+
     .blog-detail-pageHeading {
         margin-bottom: 0.5rem;
     }
@@ -115,6 +117,30 @@
             }
         }
     }
+
+    .modal-display {
+        span {
+            color: #000;
+            font-size: 15px;
+            font-weight: 300;
+            cursor: pointer;
+        }
+    }
+}
+
+.modal-header {
+    border-bottom: none !important;
+}
+
+.modal-body li {
+    list-style: none;
+    text-align: center;
+
+    h6 {
+        padding: 10px;
+        font-weight: 300;
+        cursor: pointer;
+    }
 }
 
 .page-comment {
@@ -127,6 +153,7 @@
 
     p {
         margin: 0;
+        color: #fff !important;
     }
 }
 

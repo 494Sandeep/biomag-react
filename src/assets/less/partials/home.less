@@ -1,20 +1,69 @@
 //highlights
+
 #highlights {
-    img {
-        height: 130% !important;
-        margin-top: -60px;
+    padding: 50px 0;
+    color: #fff;
+    text-align: left;
+
+    h4 {
+        font-weight: 600;
+        margin-bottom: 8px;
     }
+
+    .title {
+        padding: 3rem 0;
+
+        h1 {
+            font-size: 32px;
+            font-weight: 300;
+        }
+
+        hr {
+            width: 50px;
+            border: 2px solid #fff;
+            margin: 0.5rem 0 2rem;
+        }
+    }
+
+    .highlight-number {
+        color: #bd1c47;
+        background-color: #fff;
+        border-radius: 31px;
+        padding: 8px 16px;
+        width: 65px;
+        height: 61px;
+        font-weight: 900;
+        font-size: 30px;
+        margin: 0 auto auto 0;
+    }
+
+    .highlight-text {
+        padding: 0 16px 0 48px;
+    }
+
+    .highlights-image {
+        width: 160%;
+        margin-top: -130px;
+        margin-bottom: -130px;
+    }
+
+
 }
 
 //ourApp
 #ourApp {
+    background-color: #fff;
+
     .feature-title {
-        font-size: 1.25rem !important;
+        font-weight: 600 !important;
+        margin-bottom: 0.5rem;
     }
 
     .grey-text {
-        font-size: 13px !important;
-        width: 100% !important;
+        font-weight: 500;
+        width: 80%;
+        margin-bottom: 30px;
+        color: #9e9e9e !important;
     }
 
     .ourappHeading {
@@ -39,6 +88,7 @@
 
 // fact-biomag3d
 #fact-biomag3d {
+    background-color: #fff;
     text-align: left !important;
     padding: 20px 0 40px 0;
 
@@ -75,44 +125,8 @@
 }
 
 // PractitionerFeatures
-#PractitionerFeatures,
-#ourApp,
-#Biomag3DFeatures {
+#app-practitioner{
     background-color: #fff;
-    text-align: center;
-
-    .PractitionerWidgets {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: center;
-
-        .Practitioner_icon {
-            div {
-                display: block;
-                padding: 50px !important;
-                margin: auto;
-            }
-        }
-
-        img {
-            width: 100px !important;
-            height: 100px !important;
-            margin: auto;
-        }
-
-        .feature-title {
-            font-weight: 600 !important;
-            margin-bottom: 0.5rem;
-        }
-
-        .grey-text {
-            font-weight: 500;
-            width: 80%;
-            margin-bottom: 30px;
-            color: #9e9e9e !important;
-        }
-    }
 }
 
 //Contact US
@@ -159,5 +173,26 @@
         color: white;
         margin: 0 auto;
         font-size: 20px;
+    }
+}
+
+// media query 
+@media only screen and (max-width: 1024px) {
+    #highlights {
+        padding: 50px 15px 85px 15px;
+        text-align: center !important;
+
+        .highlights-image {
+            margin-left: auto;
+            margin-right: auto;
+            width: 60% !important;
+            margin-top: -50px !important;
+            margin-bottom: -130px !important;
+            padding-bottom: 40px !important;
+        }
+
+        .highlight-text {
+            padding: 0 15px;
+        }
     }
 }
