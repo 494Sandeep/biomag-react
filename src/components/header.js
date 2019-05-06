@@ -1,98 +1,68 @@
 import React from "react"
 import { Link } from "gatsby"
-import { Container } from "react-bootstrap";
+import { Container, NavDropdown, Navbar, Nav } from "react-bootstrap";
 import PropTypes from "prop-types"
-
-//components
-
-const handleNav = () => {
-    const burger = document.querySelector('.burger');
-    const nav = document.querySelector('.nav-lists')
-    const navList = document.querySelectorAll('.nav-lists li')
-
-    nav.classList.toggle('nav-active');
-    navList.forEach((link, index) => {
-        if (link.style.animation)
-            link.style.animation = "";
-        else
-            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.25}s`
-    })
-    burger.classList.toggle('toggle')
-}
 const renderPrimaryNavbar = (data) => {
     return (
         <>
-            <li>
-                <Link to={`/#${data.highlights}`}>{data.highlights}</Link>
-            </li>
-            <li>
-                <Link to={`/#products`}>Products</Link>
-                {/* <ul className="dropdown-menu">
-                                {data.Products.map((item, index) => {
-                                    return (
-                                        <li key={index}>
-                                            <Link to={item.href}>{item.ProductsList}</Link>
-                                        </li>
-                                    )
-                                })
-                                }
-                            </ul> */}
-            </li>
-            <li>
-                <Link to={`/#Contact_Us`}>{data.ContactUs}</Link>
-            </li>
+            <Nav>
+                <Link to={`/#highlights`}>
+                    {data.highlights}
+                </Link>
+            </Nav>
+            <NavDropdown title="Products" id="basic-nav-dropdown" >
+                {data.Products.map((item, index) => {
+                    return (
+                        <NavDropdown.Item key={index} href={`/#${item.href}`}>
+                            {item.ProductsList}
+                            <hr />
+                        </NavDropdown.Item>
+                    )
+                })}
+            </NavDropdown>
+            <Nav>
+                <Link to={`/#contact-us`}> {data.ContactUs}</Link>
+            </Nav >
         </>
     )
 }
 const renderSecondaryNavbar = (data) => {
     return (
-        <>
-            <li>
-                <Link to={`/#Contact_Us`}>{data.home}</Link>
-            </li>
-        </>
+        <Link to={`/`}>{data.home}</Link>
     )
 }
 const Header = ({ data, pageContext }) => {
     return (
         < header >
-            <Container>
-                <nav>
-                    <div className="logo">
-                        <Link to="/">Biomag</Link>
-                    </div>
-                    <ul className="nav-lists">
-                        {(pageContext.pageType === "Landing Page") ? renderPrimaryNavbar(data) : renderSecondaryNavbar(data)}
-                        {data.homeMenu.map((item) => {
-                            return (
-                                <li key={item.id}>
-                                    <Link to={item.path}>{item.navItem}</Link>
-                                </li>
-                            )
-                        })
-                        }
-                    </ul>
-                    <div className="burger" onClick={handleNav}>
-                        <div className="line1"></div>
-                        <div className="line2"></div>
-                        <div className="line3"></div>
-                    </div>
-                </nav>
-            </Container>
+            <Navbar expand="md" fixed="top">
+                <Container>
+                    <Link to="/"><img src={data.logoImage} alt="logo" className="logo" /></Link>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav" >
+                        <Nav className="ml-auto">
+                            {(pageContext.pageType === "Landing Page") ? renderPrimaryNavbar(data) : renderSecondaryNavbar(data)}
+                            {data.homeMenu.map((item, index) => {
+                                return (
+                                    <Nav key={index} >
+                                        <Link to={item.path}>{item.navItem}</Link>
+                                    </Nav>
+                                )
+                            })}
+                        </Nav>
+                    </Navbar.Collapse>
+                </Container>
+            </Navbar>
         </header >
     )
 }
-
 Header.propTypes = {
     pageContext: PropTypes.shape({
         pageType: PropTypes.string.isRequired
     }),
 }
-
 Header.defaultProps = {
     pageContext: {
         pageType: ''
     },
 }
-
 export default Header;

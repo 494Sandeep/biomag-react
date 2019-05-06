@@ -18,7 +18,7 @@ const Counter = () => {
         }   
         `)
     return (
-        <div id="fact-biomag3d" style={{ backgroundImage: `url("${biomagJson.counter.background}")` }}>
+        <div id="fact-biomag3d" style={{ background: `url("${biomagJson.counter.background}") no-repeat fixed center` }}>
             <Container >
                 <Row >
                     <Col md={6} className="m-auto">

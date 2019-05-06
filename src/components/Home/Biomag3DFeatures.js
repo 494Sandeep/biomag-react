@@ -37,10 +37,15 @@ const Biomag3DFeatures = () => {
       Biomag3DWidgets {
         Biomag3DIcon {
            childImageSharp{
-                        fluid{
-                             ...GatsbyImageSharpFluid
-                        }
+                       fixed(width: 100) {
+                    aspectRatio
+                    width
+                    height
+                    src
+                    srcSet
+                    originalName
                     }
+                            }
         }
         Biomag3DHeading
         Biomag3DDescription
@@ -52,11 +57,11 @@ const Biomag3DFeatures = () => {
     `)
     const data = biomagJson.Biomag3DFeatures;
     return (
-        <div id="Biomag3DFeatures">
+        <div id="app-biomag3d">
             <Container>
                 <Row>
                     <Col>
-                        <h1 className="section-heading">  {data.Biomag3DTitle}</h1>
+                        <h1 className="section-heading"> {data.Biomag3DTitle}</h1>
                     </Col>
                 </Row>
                 <Row className="Biomag3DFeaturesBotton mb-5">
@@ -77,7 +82,7 @@ const Biomag3DFeatures = () => {
                                 return (
                                     <Col md={6} sm={12} key={id} >
                                         < PractitionerWidgets
-                                            fluid={item.Biomag3DIcon.childImageSharp.fluid}
+                                            fixed={item.Biomag3DIcon.childImageSharp.fixed}
                                             heading={item.Biomag3DHeading}
                                             content={item.Biomag3DDescription} />
                                     </Col>

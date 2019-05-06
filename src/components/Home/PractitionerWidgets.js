@@ -1,11 +1,14 @@
 import React from 'react'
 import Img from "gatsby-image";
 import PropTypes from "prop-types"
+import { Col } from "react-bootstrap";
 
-const PractitionerWidgets = ({ fluid, heading, content }) => {
+const PractitionerWidgets = ({ fixed, heading, content }) => {
     return (
         <div className="PractitionerWidgets">
-            <Img fluid={fluid} className="Practitioner_icon" />
+            <Col xs={4} className="p-0">
+                <Img fixed={fixed} className="Practitioner_icon" />
+            </Col>
             <h6 className="feature-title">{heading}</h6>
             <h6 className="grey-text">{content}</h6>
         </div >

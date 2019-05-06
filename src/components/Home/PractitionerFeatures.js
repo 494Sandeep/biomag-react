@@ -29,8 +29,13 @@ const PractitionerFeatures = () => {
                     id
                     PractitionerIcon {
                         childImageSharp{
-                            fluid{
-                                ...GatsbyImageSharpFluid
+                           fixed(width: 100) {
+                                aspectRatio
+                                width
+                                height
+                                src
+                                srcSet
+                                originalName
                             }
                         }
                     }
@@ -44,7 +49,7 @@ const PractitionerFeatures = () => {
     )
     const data = biomagJson.PractitionerFeatures;
     return (
-        <div id="PractitionerFeatures">
+        <div id="app-practitioner">
             <Container className="text-center" >
                 <Row>
                     <Col className="p-0">
@@ -63,7 +68,7 @@ const PractitionerFeatures = () => {
                                 return (
                                     <Col md={6} sm={12} key={id} >
                                         < PractitionerWidgets
-                                            fluid={item.PractitionerIcon.childImageSharp.fluid}
+                                            fixed={item.PractitionerIcon.childImageSharp.fixed}
                                             heading={item.PractitionerHeading}
                                             content={item.PractitionerDescription} />
                                     </Col>

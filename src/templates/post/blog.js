@@ -12,7 +12,7 @@ const BlogPage = ({ data, pageContext }) => {
 
     return (
         <Layout>
-            <Container id="singleBlog" className="pt-5">
+            <Container id="singleBlog">
                 <Row className="justify-content-md-center">
                     <Col md={8} className="mb-2">
                         <h4 className="blog-detail-pageHeading">

@@ -11,8 +11,8 @@ const Training = ({ data }) => {
     return (
         <Layout>
             <SEO title="Training" />
-            <Container>
-                <Row className="justify-content-md-center pt-5">
+            <Container id="training">
+                <Row className="justify-content-md-center">
                     <Col md={8}>
                         <h3
                             className="trainingPageHedclr pb-4" style={{ fontWeight: '900', fontSize: '23px' }}

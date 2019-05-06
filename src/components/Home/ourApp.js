@@ -22,8 +22,13 @@ const OurApp = () => {
                 id
                 ourAppDevicesImage {
                    childImageSharp{
-                        fluid{
-                             ...GatsbyImageSharpFluid
+                       fixed(width: 100) {
+                            aspectRatio
+                            width
+                            height
+                            src
+                            srcSet
+                            originalName
                         }
                     }
                 }
@@ -37,7 +42,7 @@ const OurApp = () => {
     const data = biomagJson.ourApps;
     return (
         <div id="ourApp" className="py-5">
-            <Container className="text-center">
+            <Container className="text-center pt-5">
                 <Row className="m-auto">
                     <Col md={{ span: 10, offset: 1 }}>
                         <Row>
@@ -45,7 +50,7 @@ const OurApp = () => {
                                 return (
                                     <Col md={4} sm={12} key={id} >
                                         < PractitionerWidgets
-                                            fluid={item.ourAppDevicesImage.childImageSharp.fluid}
+                                            fixed={item.ourAppDevicesImage.childImageSharp.fixed}
                                             heading={item.ourAppDevicesHeading}
                                             content={item.ourAppDevicesDescription} />
                                     </Col>
