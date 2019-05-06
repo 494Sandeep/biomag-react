@@ -45,7 +45,7 @@ exports.createPages = ({ actions: { createPage }, graphql }) => {
                 path: `/blog/${node.path}`,
                 component: path.resolve(blogPageComponent),
                 context: {
-                    pageURL: node.path
+                    pageURL: node.path,
                 }
             })
         })
